@@ -30,16 +30,18 @@
 
                         <div class="form-group">
                             <label for="title">Title </label>
-                            <input type="text" class="form-control" name="title" >
+                            <input type="text" class="form-control" name="title" required>
                         </div>
 
 
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea class="form-control" name="description" rows="3"></textarea>
+                            <textarea class="form-control" name="description" rows="3" required></textarea>
                         </div>
                     
-                        <button type="submit" class="btn btn-primary">Add</button>
+                        <button type="submit" class="btn btn-primary">Add</button> 
+
+                        @include('layouts.errors')
           
                     </form>
                     
